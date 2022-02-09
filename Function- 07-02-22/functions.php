@@ -1,11 +1,13 @@
 <?php
  
-//function syntax
-
-function name ($argument)
-{
-    echo $argument;
-} 
-
-
-
+ function darkmode($single) // parameter
+ {
+     if($single%2==0)
+     {
+         return true;
+     }
+     else
+     {
+         return false;
+     }
+ }

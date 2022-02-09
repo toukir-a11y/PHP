@@ -1,96 +1,60 @@
-<?php
-require_once 'functions.php';
+        <?php
 
-$argument = "wppool";
+        require_once "functions.php";
 
-name('as your wish');
+        function evenodd($one) // parameter
+        {
+            if ($one%2==0)
+            {
+                echo "is even number";
+            }
+            else 
+            {
+                echo "is odd number";
+            }
+        }
 
-
-
-// even 0dd calculation  by funciton 
-
-function evenodd($b){
-    if ($b%2==0){
-        echo "even ";
-    }else echo "odd ";
-}
-$d= 5;
-evenodd ($d);  // when you echo in funtion just call function 
-
-echo "\n";
-
-function even ($n){
-    if ($n%2==0){
-        return true;
-    }  return false;
-}
-
-//  factorial function 
-
-function fact (int $n){  // type hinting enable
-    for ($i=$n, $f=1; $i>1; $i--){
-        $f*=$i;
-    } return $f;
-  }
-  
-
-  function sum (int $a=0, int $b=0, int $c=0):int{
-    
-    $d= $a+$b+$c;
-    return $d;
-}
-
-$a=10;
-$b=3;
-$c=5;
-
-// unlimited argument accept 
-
-function unlimited (int ...$n):int{
-
-    for ($i=0, $r=0; $i<count($n);$i++){
-        $r+=$n[$i]; 
-    } return $r;
-    }
+        evenodd(3); //argument
 
 
+        echo "\n";
 
-    
-    // caluculate factorial 
+        $wp = 4;
 
+        if( darkmode($wp) ) 
+        {
+            echo "dark  mode";
+        }
+        else
+        {
+            echo "light mode";
+        }
 
-
-    function factorial ($n){
-        for ($i=$n, $f=1; $i>1; $i--){
-            $f*=$i;
-        } return $f;
-    }
-    $n=4;
-    echo factorial($n). "\n";
-    
-    
-   // call function in different folder 
-    
-    $n=4;
-    echo fact($n);
+        echo "\n";
 
 
-    function factorials (int $a){     // type hinting 
+        // function accept 2 parameter
 
-        /*
-       if (gettype($a)!="integer"){ // type hinting 
-            return "invalid";
-        }*/
-    
-    
-        for($i=$a, $f=1; $i>1; $i--){
-            $f*=$i;
-        } return $f;
-    }
-    
-    
-    $n= 4;
-    echo factorials ($n);
-     
-    ?>
-    
+        function robot($a,$b)
+        {
+        if($a=="apple")
+        {
+            echo "is an apple";
+        }
+        elseif($b == "ball")
+        {
+            echo "is a ball";
+        }
+        else 
+        {
+            echo "don't know what about it";
+        }
+        
+            
+        }
+
+        
+        $apple = "apple";
+        $ball = "ball";
+
+        robot($apple, $ball);
