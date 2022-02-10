@@ -1,0 +1,18 @@
+
+
+<?php
+
+// array to string and string to array   ',' - it's call delimeter
+
+$color =  "red, green, blue";  // srting 
+var_dump ($color) ."\n";
+
+
+$color =  explode( ', ', "red, green, blue ") ; /// srting to array 
+var_dump($color);
+
+$ncolor=  join( ', ',$color) ; // array to string 
+
+var_dump ($ncolor);
+
+?>
