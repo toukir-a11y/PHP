@@ -4,17 +4,17 @@
 
 $string = "one, two, three, four, five";
 
-echo $string."\n";
+//echo $string."\n";
 
 $sta = explode(', ', $string); // string to array using php build in function explode()
 
-echo $sta[0]."\n";
+//echo $sta[0]."\n";
 
 $count = count($sta);
 
 for($i=0; $i<$count; $i++)
 {
-    echo $sta[$i]."\n";
+   // echo $sta[$i]."\n";
 }
 
 
@@ -28,5 +28,5 @@ print_r($ats)."\n";
 
 $multiple = preg_split( '/(, |,)/',"hello, world, we are,wppool"); 
 
-print_r($multiple);
+//print_r($multiple);
 

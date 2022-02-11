@@ -1,0 +1,19 @@
+<?php
+
+$number= array (15,'6',45,93,2,'b'=>'67',56);
+
+if(in_array( 6,$number,true)){    // when you fix value accept int type call true
+    echo "number is found";
+
+} else echo " not found ...!";
+
+
+echo array_search(2, $number);  // when you find which number index in there number
+
+if (key_exists('b', $number)){  // when you search key in there array 
+    echo "found";
+
+}else "not found";
+
+
+?>
