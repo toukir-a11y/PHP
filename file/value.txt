@@ -1,5 +1,0 @@
-wp darkmode
-easy video review
-jitsi meet
-sheets to wp table live sync
-chat widgets for multivendor marketplace
